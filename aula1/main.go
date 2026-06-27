@@ -18,11 +18,11 @@ func main() {
 	fmt.Println("Hello, World!")
 	_, err := lerArquivo("rotina.go")
 	if err != nil {
-		fmt.Println("Erro ao ler o arquivo:", err)
-		return
+		// fmt.Println("Erro ao ler o arquivo:", err)
+		panic("Erro ao ler o arquivo: " + err.Error())	
 	}
 
-	fmt.Println("Arquivo lido com sucesso")
+	// fmt.Println("Arquivo lido com sucesso")
 }
 
 func init() {
