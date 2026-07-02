@@ -12,6 +12,7 @@ func SortearIdade(ate int ) int {
 
 func CriarArquivoGb(value int) {
 	var arquivo cp.String
+	arquivo.Delimiter = "\n"
 
 	arquivo.Add("Nome | Idade | Dta Nasci | Logradouro | Bairro | Cidade")
 
