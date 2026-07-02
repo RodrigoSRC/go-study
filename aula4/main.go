@@ -16,6 +16,8 @@ func CriarArquivoGb(value int) {
 
 	arquivo.Add("Nome | Idade | Dta Nasci | Logradouro | Bairro | Cidade")
 
+	// strings.Split(arquivo.String(), "\n")
+
 	for i := 0; i < 10000000*value; i++ {
 		Idade:= SortearIdade(100)
 		Data:= time.Now()
