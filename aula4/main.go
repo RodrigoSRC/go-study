@@ -5,7 +5,7 @@ import (
 	lib "github.com/aoticombr/golang/lib"
 )
 
-func main() {
+func CriarArquivoGb(value int) {
 	var arquivo cp.String
 
 	arquivo.Add("Nome | Idade | Dta Nasci | Logradouro | Bairro | Cidade")
@@ -15,6 +15,10 @@ func main() {
 		fmt.Println("Erro ao salvar arquivo:", err)
 		return
 	}
+}
 
-	fmt.Println("Arquivo salvo com sucesso!")
+func main() {
+
+
+	// fmt.Println("Arquivo salvo com sucesso!")
 }
